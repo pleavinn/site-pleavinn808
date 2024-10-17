@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+     background: #3b3b3b url(imagens/ezgif-5-7f9c9d276d.webp); 
+}
+#container{
+    background: #09e226;
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1180px;
+}
+
+#topo {
+    position: relative;
+    background: #000000;
+    height: 15.4em;
+    min-height: 250px;
+}
+
+#logo {
+    position: absolute;
+    background:  url(imagens/topo.png) ;
+    width: 800px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+.texto{
+    width: 225px;
+    height: 195px;
+    float: right;
+}
+
+#menu {
+    position: absolute;
+    top:0;
+    right: 0;
+    background: url(imagens/topo-imagem-lateral.png) no-repeat;
+    width: 450px;
+    height: 250px;
+}
+
+#principal {
+    float: left;
+    width: 69.4%;
+    background: #206c88 top left repeat-x;
+    padding: 15px 0px;
+}
+
+#lateral{
+    float: right;
+    width: 30.6%;
+    background: #000000 top left repeat-x;
+    padding: 20px 0px;
+}
+
+.conteudo{
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+#rodape {
+    clear: both;
+    font-size: 0.8em;
+    padding: 15px;
+    background: #fff url(imagens/rodape.png) repeat-x top;
+    color: #7d7640;
+    text-align: center;
+}
+
+/* formatação de texto*/
+h2{
+    color: #000000;
+    font-size: 2.2em;
+    padding: 5px 0px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+p{
+    font-size:1em ;
+    margin-bottom: 10px;
+}
+
+#beneficios li {
+    padding: 8px;
+    border-bottom: 1px solid #03395e;
+    border-right: 1px solid #03395e;
+    border-top: 1px solid #03395e;
+    border-left: 1px solid #03395e;;
+    border-radius: 1px solid #03395e;
+    height: 6em;
+}
+
+#beneficios li a img {
+    float: left;
+    margin-right: 8px;
+}
+
+#beneficios li a {
+    font-size: 1em;
+}
+
+#beneficios li a p {
+    font-size: larger;
+    color: #d10000;
+    font-weight: 700;
+}
+
+#beneficios li a h3 {
+    font-size: 1.1em;
+    color: #14777a;
+    padding: 5px 0px;
+    background: url(imagens/ornamento.png) no-repeat center right;
+}
+
+#beneficios li:hover{
+    background: #025c77;
+    cursor: pointer;
+    color: #000000;
+}
+
+a:-webkit-any-link {
+    color: #fdfdfd;
+    cursor: pointer;
+}
+
+.foto{
+    height: 200px; width: 250px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.front{
+    transform: rotateY(0deg);
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
+.foto:hover .front{
+    transform: rotateY(-180deg);
+}
+
+.foto:hover .back{
+    transform: rotateY(0deg);
+}
+
+
+input,
+progress{
+	accent-color: #F64348;
+}
+
+.not img {
+    
+    /* Fazendo a imagem ficar com bordas redondas */
+    border-radius: 10%;
+    
+    
+    /* Transição suave para a animação ao passar o mouse */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    
+}
+
+/* Efeito ao passar o mouse */
+.not img:hover {
+    /* Ampliando levemente a imagem */
+    transform: scale(1.1);
+    
+    /* Adicionando uma sombra para destacar a imagem */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

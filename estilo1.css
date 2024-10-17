@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+.conteiner{
+    position: relative;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-login{
+    width: 400px;
+    position: absolute;
+}
+form{
+    width: 100%;
+    padding: 0 50px;
+}
+h2{
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+.caixa-entrada{
+    position: relative;
+    margin: 25px 0;
+}
+input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    outline: none;
+    border-radius: 40px;
+    transition: .5s ease;
+}
+label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translatey(-50%);
+    font-size: 1.5em;
+    color: #ffffff;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.esqueceu-senha{
+    margin: -15px 0 10px;
+    text-align: center;
+}
+.esqueceu-senha a{
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #ffffff;
+}
+.esqueceu-senha a:hover{
+    text-decoration: underline;
+    color: a#ffffff;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #ef10bf;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: 700;
+}
+.cadastre-link{
+    margin: 20px 0 10px;
+    text-align: center;
+    
+}
+.cadastre-link a{
+    font-size: 0.8em;
+    color: #ef10b7;
+    text-decoration: none;
+    font-weight: 400;
+}
+.cadastre-link a:hover{
+    text-decoration: underline double;
+}
+.conteiner span{
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 6px;
+    background: #ef10b7;
+    border-radius: 8px;
+    transform: scale(2.2) rotate(calc(var(--i)*(360deg / 50)));
+    transform-origin: 128px;
+    animation: rotacao 3s linear infinite;
+    animation-delay: calc(var(--i)*(3s / 50));
+}
+.caixa-entrada input:focus~label,
+.caixa-entrada input:valid~label{
+    top: 1px;
+    font-size: .8em;
+    background: #000;
+    padding: 0 6px;
+    color: aqua;
+}
+.caixa-entrada input:focus{
+    border-color: aquamarine;
+}
+.caixa-entrada input{
+    font-size: 1em;
+    color: #ffffff;
+    padding: 0 20px;
+}
+@keyframes rotacao {
+    0%{
+        background: #ff0000;
+    }
+    25%{
+        background: #fffb00;
+    }
+    50%{
+        background: #15ff00;
+    }
+    75%{
+        background: #00ccff;
+    }
+    100%{
+        background: #f70cff;
+    }
+}

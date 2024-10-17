@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios JS</title>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    background: url(imagens/7936dc2a46b4f9b0edb5714d84d5df710de1445er1-200-200_00.gif);
+}
+.center-div {
+    background-color: aliceblue;
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    border: 3px solid pink;
+}
+#codigo {
+    width: 100%;
+    height: 300px;
+}
+#resultado {
+    width: 100%;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#rodarCodigo {
+            border: none;
+            background-color: #f79eff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #rodarCodigo:hover {
+            background-color: #e672c3;
+        }
+        
+</style>
+</head>
+<body>
+<div style="background: url(imagens/Novo\ Projeto\ \(1\).webp) no-repeat; background-size: cover; border-radius: 30px;">
+<h1><center>Informações do Aluno</h1></center>
+<center><b>Aluno:</b> Alyson Fernando Bolzan Rufino</center>
+<center><b>Turma:</b> 2021</center>
+<center><h1>Soluções de Exercícios</h1></center>
+</div>
+<hr>
+
+<div class="center-div">
+<center>1 - Escreva um programa que mostre a soma de todos os divisores de um dado número X. Um divisor é qualquer número menor que X cujo resto da divisão é igual a 0.</center>
+<p>
+</p>    
+<center>Exemplo: Para X = 8, o resultado é 7, pois 7 = 1 + 2 + 4.</center>
+
+<br>
+
+<textarea id="1">
+function somaDivisores(X) {
+    let soma = 0;
+
+    for (let i = 1; i < X; i++) {
+        if (X % i === 0) {
+            soma += i;
+        }
+    }
+
+    return soma;
+}
+
+const X = 8;
+const resultado = somaDivisores(X);
+
+console.log(`Para X = ${X}, o resultado é ${resultado}.`);
+</textarea>
+<br>
+<br>
+<center><button id="rodarCodigo" onclick="rodarCodigo()">Executar Código</button></center>
+<br>
+
+<div id="resultado"></div>
+<br>
+<hr>
+<br>
+<center>2 – Considere dois pontos no espaço 2D com as seguintes coordenadas: A(x 1 , y 1 ) e B(x 2 ,y 2 ). A distância euclidiana D, entre estes pontos é dada pela seguinte fórmula:</center>
+<p>
+</p>    
+
+<br>
+
+
+<textarea id="1">
+function somaDivisores(X) {
+    let soma = 0;
+
+    for (let i = 1; i < X; i++) {
+        if (X % i === 0) {
+            soma += i;
+        }
+    }
+
+    return soma;
+}
+
+const X = 8;
+const resultado = somaDivisores(X);
+
+console.log(`Para X = ${X}, o resultado é ${resultado}.`);
+</textarea>
+<br>
+<br>
+<center><button id="rodarCodigo" onclick="rodarCodigo()">Executar Código</button></center>
+<br>
+
+<div id="resultado"></div>
+
+<br>
+<hr>
+<br>
+<center>3 - Dada uma frase de entrada por um usuário, faça um programa que conte a ocorrência de
+    cada palavra nesta frase. O programa não deve distinguir letras maiúsculas e minúsculas.
+    Exemplo: “Faça chuva ou faça sol.”
+    Resultado: faça (2), chuva (1), ou, (1), sol (1)</center>
+<p>
+</p>    
+
+<br>
+
+
+<textarea id="1">
+function somaDivisores(X) {
+    let soma = 0;
+
+    for (let i = 1; i < X; i++) {
+        if (X % i === 0) {
+            soma += i;
+        }
+    }
+
+    return soma;
+}
+
+const X = 8;
+const resultado = somaDivisores(X);
+
+console.log(`Para X = ${X}, o resultado é ${resultado}.`);
+</textarea>
+<br>
+<br>
+<center><button id="rodarCodigo" onclick="rodarCodigo()">Executar Código</button></center>
+<br>
+
+<div id="resultado"></div>
+
+<br>
+<hr>
+<br>
+<center>4 – Faça um programa que leia uma string de números como entrada de um usuário que
+    representa uma matriz e diga qual dimensão dela (quantidade de linhas e colunas). As linhas
+    da matriz são separadas por um caractere de ponto e vírgula ‘;’e as colunas são separadas por
+    um espaço vazio ‘ ’, como no exemplo:
+    Entrada: 1 4 6 8; 3 5 6 7; 1 3 2 4
+    Resultado: Essa é uma matriz de dimensão 3 x 4.</center>
+<p>
+</p>    
+
+<br>
+
+
+<textarea id="1">
+function somaDivisores(X) {
+    let soma = 0;
+
+    for (let i = 1; i < X; i++) {
+        if (X % i === 0) {
+            soma += i;
+        }
+    }
+
+    return soma;
+}
+
+const X = 8;
+const resultado = somaDivisores(X);
+
+console.log(`Para X = ${X}, o resultado é ${resultado}.`);
+</textarea>
+<br>
+<br>
+<center><button id="rodarCodigo" onclick="rodarCodigo()">Executar Código</button></center>
+<br>
+
+<div id="resultado"></div>
+
+<br>
+<hr>
+<br>
+<center>5 – Dado um número inteiro positivo N como entrada de um usuário, escreva um programa
+    que mostre os primeiros N números da sequência de Fibonacci. (A sequência de Fibonacci é
+    iniciada por 0 e 1, e o próximo número é sempre a soma dos dois últimos). Exemplo:
+    Entrada: 8
+    Resultado: 0, 1, 1, 2, 3, 5, 8, 13</center>
+<p>
+</p>    
+
+<br>
+
+
+<textarea id="1">
+function somaDivisores(X) {
+    let soma = 0;
+
+    for (let i = 1; i < X; i++) {
+        if (X % i === 0) {
+            soma += i;
+        }
+    }
+
+    return soma;
+}
+
+const X = 8;
+const resultado = somaDivisores(X);
+
+console.log(`Para X = ${X}, o resultado é ${resultado}.`);
+</textarea>
+<br>
+<br>
+<center><button id="rodarCodigo" onclick="rodarCodigo()">Executar Código</button></center>
+<br>
+
+<div id="resultado"></div>
+
+
+
+<script src="js/jsexercicios.js"></script>
+
+</div>
+
+
+</body>
+</html>

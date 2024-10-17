@@ -1,0 +1,63 @@
+Barra de Progresso
+
+<progress value="25" max="100"></progress>
+
+-----
+
+rotacao 3d com css
+
+<div class="foto">
+	<div class="front"></div>
+	<div class="back"></div>
+</div>
+
+
+-
+
+.foto{
+    height: 200px; width: 250px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.front{
+    transform: rotateY(0deg);
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
+.foto:hover .front{
+    transform: rotateY(-180deg);
+}
+
+.foto:hover .back{
+    transform: rotateY(0deg);
+}
+
+
+-----
+
+Efeito hover zoom
+
+div:hover:not(:hover){
+	opacity:0.3;
+}
+img:hover{
+	scale:1.1;
+}
+
+------
+
+input,
+progress{
+	accent-color: #F64348;
+}
