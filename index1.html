@@ -15,12 +15,15 @@
                 <h1 class="logotipo">
                     <a href=""></a>
                 </h1>
+                <button id="logoutButton">LogOut</button>
             </div>
 
             <div id="menu">
 
                 <img class="texto" src="imagens/logotokito.gif">
 
+                <!-- Botão de LogOut -->
+                
                 
             </div>
         </div><!--Fim Topo-->
@@ -249,7 +252,11 @@
 
 </div>
         
-    
+<script>
+    document.getElementById('logoutButton').addEventListener('click', function() {
+        window.location.href = "index.html"; // Redireciona para index.html
+    });
+</script>
 
         
 
