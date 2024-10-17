@@ -2,6 +2,8 @@
 
 Este é o **meu site pessoal** que fiz para treinar programação web, tanto no **front-end** quanto no **back-end**. 
 
+- Link: https://pleavinn.github.io/sitenovo/
+
 O site é uma junção de alguns dos meus projetos em um só lugar, contendo:
 
 - Tela de Login 🔑
