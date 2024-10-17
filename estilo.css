@@ -191,17 +191,31 @@ progress{
 #logoutButton {
     position: absolute; /* Posicionamento absoluto dentro do #topo */
     top: 10px; /* Distância do topo da página */
-    left: 0px; /* Distância do canto esquerdo da página */
-    background-color: #f44336; /* Cor de fundo do botão (vermelho) */
+    left: 10px; /* Distância do canto esquerdo da página */
+    background-color: rgb(244, 67, 54); /* Cor de fundo inicial (vermelho) */
     color: white; /* Cor do texto */
     border: none; /* Remove a borda padrão */
     padding: 10px 20px; /* Espaçamento interno do botão */
     border-radius: 5px; /* Bordas arredondadas */
     cursor: pointer; /* Ícone de cursor de mão ao passar o mouse */
     font-size: 16px; /* Tamanho do texto */
-    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+    transition: background-position 0.3s ease, background-color 0.3s ease; /* Transição suave para a posição do fundo */
 }
 
+/* Efeito hover com animação de mudança de cores */
 #logoutButton:hover {
-    background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
+    background: linear-gradient(90deg, rgb(244, 67, 54), rgb(255, 193, 7), rgb(76, 175, 80), rgb(3, 169, 244), rgb(156, 39, 176)); /* Gradiente com várias cores */
+    background-size: 200% 100%; /* Aumenta o tamanho do gradiente */
+    animation: gradientAnimation 3s infinite; /* Chama a animação ao passar o mouse */
 }
+
+/* Definindo a animação */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%; /* Início do gradiente à esquerda */
+    }
+    100% {
+        background-position: 100% 0%; /* Fim do gradiente à direita */
+    }
+}
+
