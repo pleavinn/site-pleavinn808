@@ -186,3 +186,22 @@ progress{
     /* Adicionando uma sombra para destacar a imagem */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+#logoutButton {
+    position: absolute; /* Posicionamento absoluto dentro do #topo */
+    top: 10px; /* Distância do topo da página */
+    left: 0px; /* Distância do canto esquerdo da página */
+    background-color: #f44336; /* Cor de fundo do botão (vermelho) */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Ícone de cursor de mão ao passar o mouse */
+    font-size: 16px; /* Tamanho do texto */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+#logoutButton:hover {
+    background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
+}
