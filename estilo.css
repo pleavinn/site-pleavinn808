@@ -264,3 +264,15 @@ progress{
 .radio-container button:active {
     transform: scale(0.95); /* Efeito de clique */
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adicione se quiser um espaçamento no topo */
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Isso garante que a imagem se ajuste ao tamanho do contêiner */
+}
