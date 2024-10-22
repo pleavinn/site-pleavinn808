@@ -1,0 +1,121 @@
+/* Estilos básicos */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para o logo */
+  #logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    z-index: 1;
+    border: 15%;
+  }
+  
+  /* Animação de fade-out */
+  #logo {
+    width: 1000px;
+    height: auto;
+    animation: fadeOut 3s ease-in-out forwards;
+    border-radius: 50px; /* Cantos arredondados opcional */
+  }
+  
+  /* Animação do logo */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Conteúdo da página, oculto inicialmente */
+  #content {
+    text-align: center;
+  }
+  
+  /* Estilos globais */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo no canto superior esquerdo */
+header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo {
+  width: 100px; /* Tamanho pequeno do logo */
+  height: auto;
+}
+
+/* Imagem da Line-up no centro */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: 50px;
+}
+
+.lineup {
+  width: 80%; /* Ajuste conforme o tamanho da imagem da line-up */
+  height: auto;
+  max-width: 100%;
+  border-radius: 50px;
+
+}
+
+/* Contêiner dos botões na parte inferior */
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+/* Botões com imagens */
+.image-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.image-button img {
+  width: 150px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito hover para hostilizar o botão */
+.image-button:hover img {
+  transform: scale(1.1); /* Aumenta o tamanho da imagem no hover */
+}
+
+
+
